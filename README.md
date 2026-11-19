@@ -1,88 +1,28 @@
-# SpendWise
+# SpendWise Landing Page
 
-SpendWise is a mobile-responsive student budget and spending insights web application designed to help university students manage their personal finances effectively. Users can track daily expenses, set monthly and category-based budgets, monitor spending habits, and receive budget alerts and personalized rule-based recommendations through an interactive dashboard.
+Simple responsive marketing website for the **SpendWise – Student Budget & Spending Insights Platform** ATP project.
 
-## Key Features
+## Run locally
 
-- **Expense Tracking** – Add, edit, delete, and categorize daily expenses.
-- **Budget Management** – Set monthly and category-specific spending limits.
-- **Spending Dashboard** – View total expenses, remaining budgets, and financial summaries.
-- **Spending Insights** – Visualize spending patterns through interactive charts.
-- **Budget Alerts** – Receive notifications when spending approaches or exceeds budget limits.
-- **Smart Recommendations** – Get rule-based suggestions to improve spending habits.
-- **Responsive Design** – Access the platform from mobile phones, tablets, and desktops.
+Open `index.html` in a browser. No packages or build step are required. You can also use VS Code Live Server.
 
-## Technology Stack
+## Files
 
-| **Component** | **Technology** | **Purpose** |
-| --- | --- | --- |
-| Frontend | React.js, Tailwind CSS | Responsive user interface |
-| Backend | Node.js, Express.js | REST API and business logic |
-| Database | PostgreSQL | Store users, expenses, and budgets |
-| Authentication | JWT, bcrypt | User authentication and password security |
-| Data Visualization | Recharts | Spending charts and analytics |
-| Version Control | GitHub | Source code management and collaboration |
-| Project Management | Linear | Agile sprint and task management |
+- `index.html` — semantic HTML and page sections
+- `style.css` — responsive styling
+- `script.js` — mobile menu and budget calculator demo
+- `favicon.svg` — website icon
 
-## CI Pipeline
+## Before publishing
 
-The planned GitHub Actions workflow will run automatically on every **push** and **pull request** to the `develop` branch.
+1. Replace `YOUR_EMAIL@example.com` in `index.html` with your team contact email.
+2. Replace illustrative dashboard values and copy with your actual project details as needed.
+3. The budget calculator is **a demo only** and does not save information. The contact button opens an email client; it is not a signup or submission form.
+4. Add real Figma screenshots or a prototype link if required for your coursework.
+5. Create a social preview image and add `og:image` and your production URL metadata if required.
+6. Deploy to a static host, connect your own `.com` or `.lk` domain and verify HTTPS if required by the ATP specification.
+7. Test on mobile and desktop, and capture deployment evidence for your portfolio.
 
-### What it checks
+## Suggested GitHub structure
 
-| **Job** | **Tool** | **Purpose** |
-| --- | --- | --- |
-| Backend | `npm run lint` | Checks backend JavaScript code quality |
-| Backend | `npm test` | Runs backend automated tests |
-| Frontend | `npm run lint` | Runs ESLint checks |
-| Frontend | `npm run build` | Ensures the React application compiles |
-
-The pipeline will **fail** if any configured check does not pass.
-
-### Run checks locally
-
-**Backend (from `/backend`)**
-
-```bash
-npm install
-npm run lint
-npm test
-```
-
-**Frontend (from `/frontend`)**
-
-```bash
-npm install
-npm run lint
-npm run build
-```
-
-## Project Structure
-
-```text
-spendwise-atp/
-├── frontend/
-├── backend/
-├── landing-page/
-├── docs/
-│   ├── requirements/
-│   ├── wireframes/
-│   ├── diagrams/
-│   └── sprint-records/
-├── .github/
-│   └── workflows/
-└── README.md
-```
-
-## Development Workflow
-
-The project follows an Agile development methodology using Scrum practices. GitHub is used for version control, while Linear is used to manage user stories, tasks, and sprint progress.
-
-Team members work on separate feature branches and submit pull requests for review before merging changes into the shared development branch.
-
-## Team
-
-- **Member 1:** [Udan Wanasinghe]
-- **Member 2:** [Viran Kaushika]
-
-
+Place this folder at `landing-page/` in your `spendwise-atp` repository. Commit changes to a feature branch and open a pull request for review.
